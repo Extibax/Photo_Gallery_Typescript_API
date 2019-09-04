@@ -1,5 +1,10 @@
-import { app } from "./app";
+import app from "./app";
 
-app.listen(3000, () => {
-  console.log("Server on port", 3000);
-});
+const server_port = app.get("port");
+
+async function main() {
+  await app.listen(server_port);
+  console.log("Server on port", server_port);
+}
+
+main();
