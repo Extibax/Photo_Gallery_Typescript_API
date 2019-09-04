@@ -1,0 +1,21 @@
+{
+  "name": "Photo_Gallery_Typescript_API",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Extibax/Photo_Gallery_Typescript_API",
+  "author": "<extibax@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn build && node dist/index.js",
+    "build": "tsc",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "rimraf": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "typescript": "^3.6.2"
+  }
+}
