@@ -1,6 +1,12 @@
 "use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
 Object.defineProperty(exports, "__esModule", { value: true });
-const app_1 = require("./app");
-app_1.app.listen(3000, () => {
-    console.log("Server on port", 3000);
-});
+const app_1 = __importDefault(require("./app"));
+const server_port = app_1.default.get("port");
+async function main() {
+    await app_1.default.listen(server_port);
+    console.log("Server on port", server_port);
+}
+main();
