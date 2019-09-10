@@ -14,6 +14,7 @@ const app = express_1.default();
 app.set("port", process.env.PORT || 3000);
 /* Middlewares */
 app.use(morgan_1.default("dev"));
+app.use(express_1.default.json());
 /* Routes */
 app.use("/api", routes_1.default);
 /* This folder for this application will be used to store public files */
