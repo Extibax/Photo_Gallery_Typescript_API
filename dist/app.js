@@ -11,7 +11,7 @@ const path_1 = __importDefault(require("path"));
 const routes_1 = __importDefault(require("./routes"));
 const app = express_1.default();
 /* Settings */
-app.set("port", process.env.PORT || 3000);
+app.set("port", process.env.PORT || 4000);
 /* Middlewares */
 app.use(morgan_1.default("dev"));
 app.use(express_1.default.json());
